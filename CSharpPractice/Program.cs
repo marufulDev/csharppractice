@@ -6,14 +6,16 @@ namespace CSharpPractice
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Please write your Name: ");
-            string UserName = Console.ReadLine();
+            // ternary Operator Implementation
+            int number = 103;
+            bool isNumber10 = number == 10 ? true : false;
+            Console.WriteLine("Is the number is 10? Ans: {0}", isNumber10);
 
-            // Concatenation writing Way
-            Console.WriteLine("Welcome " + UserName);
-
-            // Place holder syntax---- preferred
-            Console.WriteLine("Welcome {0} .", UserName);
+            //Null coalescing Operator Implementation
+            int? TotalTokken = 100;
+            int? SoldTokken = 100;
+            int AvailableToken = (TotalTokken - SoldTokken) ?? 0;
+            Console.WriteLine("Total Number of Available Token is : {0}", AvailableToken);
         }
     }
 }
