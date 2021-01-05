@@ -6,10 +6,11 @@ namespace CSharpPractice
 {
     internal class Practice
     {
-        private static void Main(string[] args)
+        private static void Main()
         {
-            Console.WriteLine("Hello World! from Practice");
-            Console.ReadKey();
+            Console.WriteLine("Please write your Name: ");
+            string UserName = Console.ReadLine();
+            Console.WriteLine("Welcome " + UserName);
         }
     }
 }

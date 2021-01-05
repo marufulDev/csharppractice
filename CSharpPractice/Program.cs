@@ -6,8 +6,14 @@ namespace CSharpPractice
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! from Program");
-            Console.ReadKey();
+            Console.WriteLine("Please write your Name: ");
+            string UserName = Console.ReadLine();
+
+            // Concatenation writing Way
+            Console.WriteLine("Welcome " + UserName);
+
+            // Place holder syntax---- preferred
+            Console.WriteLine("Welcome {0} .", UserName);
         }
     }
 }
